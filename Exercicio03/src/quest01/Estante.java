@@ -1,6 +1,6 @@
 package quest01;
 
-public class Estante extends Metal{
+public class Estante extends Metal {
 
 	private float altura;
 	private float largura;
@@ -8,27 +8,30 @@ public class Estante extends Metal{
 	public float getAltura() {
 		return altura;
 	}
+
 	public void setAltura(float altura) {
 		this.altura = altura;
 	}
+
 	public float getLargura() {
 		return largura;
 	}
+
 	public void setLargura(float largura) {
 		this.largura = largura;
 	}
 
 	@Override
-	public String toString() {
-		return "Estante [" + "Altura:" + altura + "Largura:" + largura + "]";
-	}
-	@Override
 	public void aumentarPreco(float percentual) {
 
 		percentual = 2.0f;
-		System.out.println("Teve o aumento de preÁo de 2% pela quantidade de m„os de tinta que foi 3" 
-				+ this.getPrecoVenda() * percentual);		
+		System.out.println("Teve o aumento de pre√ßo de 2% pela quantidade de m√£os de tinta que foi 3" + this.getPrecoVenda() * percentual);
 	}
 
-
+	@Override
+	public String toString() {
+		return "Estante [altura=" + altura + ", largura=" + largura + ", getEspessura()=" + getEspessura()
+				+ ", getCor()=" + getCor() + ", getMaterial()=" + getMaterial() + ", getDescricao()=" + getDescricao()
+				+ ", getCusto()=" + getCusto() + ", getPrecoVenda()=" + getPrecoVenda() + "]";
+	}
 }
