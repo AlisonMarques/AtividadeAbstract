@@ -155,15 +155,41 @@ public class Loja {
 		System.out.println(" 2.     M E S A																");
 	}
 	
-	private static void gravarMovelComMaterialDeMadeira() {
-		
+	private static void gravarMovelComMaterialDeMadeira(int opcao) {
+		if (opcao == 1) {
+
+			Cama cama = new Cama();
+			moveis.add(cama);
+
+		} else 
+			if (opcao == 2) {
+
+				GuardaRoupa guardaRoupa = new GuardaRoupa();
+				moveis.add(guardaRoupa);
+		}
 	}
 
-	private static void gravarMovelComMaterialDeMetal() {
-		
+	private static void gravarMovelComMaterialDeMetal(int opcao) {
+
+		if (opcao == 1) {
+
+			Estante estante = new Estante();
+			moveis.add(estante);
+		}
 	}
 
-	private static void gravarMovelComMaterialDePlastico() {
-		
+	private static void gravarMovelComMaterialDePlastico(int opcao) {
+
+		if (opcao == 1) {
+
+			ArmarioBanheiro armarioBanheiro = new ArmarioBanheiro();
+			moveis.add(armarioBanheiro);
+
+		} else 
+			if (opcao == 2) {
+
+				Mesa mesa = new Mesa();
+				moveis.add(mesa);
+		}
 	}
 }
