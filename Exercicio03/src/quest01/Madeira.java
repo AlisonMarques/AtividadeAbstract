@@ -1,7 +1,7 @@
 package quest01;
 
 public abstract class Madeira extends Movel {
-	
+
 	private String tipoMadeira;
 
 	public String getTipoMadeira() {
@@ -11,9 +11,8 @@ public abstract class Madeira extends Movel {
 	public void setTipoMadeira(String tipoMadeira) {
 		this.tipoMadeira = tipoMadeira;
 	}
-	
+
 	public void vernizar() {
 		System.out.println("vernizando... vernizado");
 	}
-
 }
